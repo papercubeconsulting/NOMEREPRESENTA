@@ -10,18 +10,6 @@ import {
 } from "react-icons/ai"
 import { IconContext } from "react-icons"
 
-const FooterHeader = styled.div`
-  width: 1%00;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  background-color: #262626;
-  display: flex;
-  flex-direction: column;
-  @media (min-width: 800px) {
-    flex-direction: row;
-  }
-`
-
 const PostFooter = styled.div`
   width: 100%;
   background-color: #262626;
@@ -31,96 +19,6 @@ const PostFooter = styled.div`
   @media (min-width: 800px) {
     flex-direction: row;
   }
-`
-
-const Logo = styled.img`
-  width: 200px;
-  height: 200px;
-  display: none;
-  @media (min-width: 800px) {
-    display: block;
-  }
-`
-
-const EmailUsDiv = styled.div`
-  width: 100%;
-  margin-top: 3rem;
-  margin-left: 0rem;
-  color: white;
-  font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  @media (min-width: 800px) {
-    margin-left: 20rem;
-    width: 40%;
-  }
-`
-
-const ContactUsDiv = styled.div`
-  width: 100%;
-  margin-top: 3rem;
-  margin-left: 0rem;
-  color: white;
-  font-size: 14px;
-  display: flex;
-  flex-direction: column;
-  @media (min-width: 800px) {
-    margin-left: 0rem;
-    width: 60%;
-  }
-`
-
-const SubscriptionInput = styled.input`
-  margin-top: 2rem;
-  color: #fff;
-  border-radius: 0;
-  background: transparent;
-  outline: 0;
-  border: 0;
-  border-bottom: 1px solid #c4c4c4;
-  line-height: 32px;
-  font-size: 14px;
-  margin-bottom: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-`
-
-const SubscriptionButton = styled.button`
-  margin-top: 1rem;
-  border: 1px solid #e7e6e0;
-  box-sizing: border-box;
-  border-radius: 2px;
-  cursor: pointer;
-  display: inline-block;
-  font-style: normal;
-  font-weight: 600;
-  color: #e7e6e0;
-  background-color: #262626;
-  text-align: center;
-  height: 40px;
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-`
-const EmailLink = styled.a`
-  color: #767b8a;
-  font-weight: 200;
-  margin-top: 3rem;
-`
-
-const Dot = styled.div`
-  background-color: #0b9299;
-  width: 8px;
-  height: 8px;
-  margin-top: 5px;
-  margin-right: 8px;
-  border-radius: 50%;
-`
-
-const FooterTitle = styled.p`
-  display: flex;
-  flex-direction: row;
 `
 
 const Copyrigth = styled.div`
