@@ -45,7 +45,17 @@ module.exports = {
         ],
       },
     },
-
+    //gastby remark audio
+    {
+      resolve: 'gatsby-remark-audio',
+      options: {
+        preload: 'auto',
+        loop: false,
+        controls: true,
+        muted: false,
+        autoplay: false
+      }
+    },
     // Plugin for Google Fonts , Archivo Font
   ],
 }
