@@ -60,9 +60,7 @@ export default function Header() {
   return (
     <>
       <Container>
-        <Rectangle src={mainGIF}>
-         
-        </Rectangle>
+        <Rectangle src={mainGIF}/>      
       </Container>
     </>
   )
