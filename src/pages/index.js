@@ -1,5 +1,8 @@
 import React from "react"
 
+import "../../static/global.css"
+import MainLayout from "../components/Layouts/MainLayout"
+
 export default function Home() {
-  return <div>Hello world!</div>
+  return <MainLayout>GAAA!</MainLayout>
 }
