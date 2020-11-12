@@ -6,6 +6,7 @@ import {
   AiOutlineInstagram,
   AiOutlineLinkedin,
   AiOutlineFacebook,
+  AiOutlineGlobal,
 } from "react-icons/ai"
 import { IconContext } from "react-icons"
 
@@ -151,50 +152,29 @@ export default function Footer() {
   /*Aca iria la conexion al servicio para mandar correo */
   return (
     <footer>
-      <FooterHeader>
-        <Logo src="/aporta.svg" alt="aporta_logo" name="aporta_logo" />
-        <EmailUsDiv>
-          <FooterTitle>
-            {" "}
-            <Dot />
-            QUIERO SEGUIR INFORMADO/A
-          </FooterTitle>
-          <SubscriptionInput
-            type="text"
-            id="email_input"
-            name="email"
-            placeholder="Escribe tu e-mail"
-          />
-          <SubscriptionButton>SUSCRIBIRME</SubscriptionButton>
-        </EmailUsDiv>
-        <ContactUsDiv>
-          <FooterTitle>
-            {" "}
-            <Dot />
-            CONTÁCTANOS
-          </FooterTitle>
-          <EmailLink href="mailto:analitica@aporta.org.pe">
-            analitica@aporta.org.pe
-          </EmailLink>
-        </ContactUsDiv>
-      </FooterHeader>
+      
       <PostFooter>
         <Copyrigth>
-          © Advanced Program in Data Science & Global Skills. Lima, Perú 2020
+          hecho por © Papercube Consulting SAC para todos los peruanos. Lima, Perú 2020
         </Copyrigth>
         <Social>
           <IconContext.Provider
             value={{ color: "white", size: "2.5em", className: "social_icon" }}
           >
-            <a href="https://www.instagram.com/aporta_peru/">
-              <AiOutlineInstagram />
+           <a href="https://papercube.pe/">
+           <AiOutlineGlobal/>
             </a>
-            <a href="https://www.linkedin.com/company/aporta-peru/">
+            <a href="https://www.linkedin.com/company/papercube">
               <AiOutlineLinkedin />
             </a>
-            <a href="https://www.facebook.com/aportainnovacion/">
+            <a href="https://www.facebook.com/papercube">
               <AiOutlineFacebook />
             </a>
+            <a href="https://www.instagram.com/papercube_consulting/?hl=es-la">
+              <AiOutlineInstagram />
+            </a>
+            
+            
           </IconContext.Provider>
         </Social>
       </PostFooter>
