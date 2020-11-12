@@ -157,17 +157,17 @@ export default function Navbar(props) {
             ¡MANIFIESTATE!
           </NavbarTitles>
         </NavbarLink>
-        <NavbarLink to="/sponsors" active={props.active === 2 ? true : false}>
+        <NavbarLink to="/unete" active={props.active === 2 ? true : false}>
           <NavbarTitles active={props.active === 2 ? true : false}>
-            !UNETÉ!
+            ¡UNETÉ!
           </NavbarTitles>
         </NavbarLink>
-        <NavbarLink to="/aboutus" active={props.active === 3 ? true : false}>
+        <NavbarLink to="/traidores" active={props.active === 3 ? true : false}>
           <NavbarTitles active={props.active === 3 ? true : false}>
             EL PUEBLO LOS JUSGARÁ
           </NavbarTitles>
         </NavbarLink>
-        <NavbarLink to="/events" active={props.active === 4 ? true : false}>
+        <NavbarLink to="/no-nos-robaran" active={props.active === 4 ? true : false}>
           <NavbarTitles active={props.active === 4 ? true : false}>
             NO NOS ROBARÁN EL FUTURO
           </NavbarTitles>
@@ -184,17 +184,17 @@ export default function Navbar(props) {
           ¡MANIFIESTATE!
           </NavbarMinTitles>
         </NavbarLink>
-        <NavbarLink to="/sponsors" active={props.active === 2 ? true : false}>
+        <NavbarLink to="/unete" active={props.active === 2 ? true : false}>
           <NavbarMinTitles active={props.active === 2 ? true : false}>
             !UNETÉ!
           </NavbarMinTitles>
         </NavbarLink>
-        <NavbarLink to="/aboutus" active={props.active === 3 ? true : false}>
+        <NavbarLink to="/traidores" active={props.active === 3 ? true : false}>
           <NavbarMinTitles active={props.active === 3 ? true : false}>
             EL PUEBLO LOS JUSGARÁ
           </NavbarMinTitles>
         </NavbarLink>
-        <NavbarLink to="/events" active={props.active === 4 ? true : false}>
+        <NavbarLink to="/no-nos-robaran" active={props.active === 4 ? true : false}>
           <NavbarMinTitles active={props.active === 4 ? true : false}>
             NO NOS ROBARÁN EL FUTURO
           </NavbarMinTitles>
