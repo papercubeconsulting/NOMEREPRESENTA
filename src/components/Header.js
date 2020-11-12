@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 //import { Row, Col } from "reactstrap"
 import styled from "styled-components"
@@ -7,23 +7,22 @@ import mainGIF from "../../static/bandera.gif"
 
 const Container = styled.div`
   position: relative;
+  display:flex;
   width: 100%;
-  height: 800px;
-  background: #5b5b5b;
-  margin: 0px auto;
-  z-index: 0;`
+  height: 1200px;
+  background: #ffffff;
+  z-index: 0;
+  justify-content:center;
+
+  `
 
 
 const Rectangle = styled.img`
 display:flex;
-position: absolute;
-width: 60%;
-height: 600px;
-left: 20%;
-top: 104px;
-justify-content: center; 
-align-items:center;
-align-content:center;
+position: relative;
+width: 600px;
+height: 857px;
+top: 50px;
 /* bg light */
 background: #f6f9fb;
 
@@ -52,6 +51,7 @@ const Text = styled.h1`
   }
 `
 
+
 const TextGreen = styled.strong`
   color: #0b9299;
 `
@@ -60,7 +60,7 @@ export default function Header() {
   return (
     <>
       <Container>
-        <Rectangle src={mainGIF}/>      
+        <Rectangle src={mainGIF}/>
       </Container>
     </>
   )
