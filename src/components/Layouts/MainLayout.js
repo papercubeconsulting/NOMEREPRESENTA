@@ -7,7 +7,6 @@ function MainLayout(props) {
     <React.Fragment>
         <Navbar active={1}/>
         {props.children}
-        <Footer/>
     </React.Fragment>
   );
 }
