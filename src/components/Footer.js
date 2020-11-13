@@ -40,9 +40,12 @@ const Social = styled.div`
   color: #767b8a;
   display: flex;
   justify-content: center;
+  // Ocultar social
+  display:none;
   @media (min-width: 800px) {
     width: 20rem;
     justify-content: space-around;
+
   }
 `
 
@@ -53,7 +56,7 @@ export default function Footer() {
       
       <PostFooter>
         <Copyrigth>
-          hecho por © Papercube Consulting SAC para todos los peruanos. Lima, Perú 2020
+          Merino no es mi presidente.
         </Copyrigth>
         <Social>
           <IconContext.Provider

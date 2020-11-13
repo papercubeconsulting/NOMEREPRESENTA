@@ -1,9 +1,12 @@
 import React from "react";
 
+
+
 //import { Row, Col } from "reactstrap"
 import styled from "styled-components"
 
 import mainGIF from "../../static/bandera.gif"
+import photoGIF from "../../static/bandera1.png"
 
 const Container = styled.div`
   position: relative;
@@ -60,7 +63,7 @@ export default function Header() {
   return (
     <>
       <Container>
-        <Rectangle src={mainGIF}/>
+        <Rectangle src={mainGIF} alt={photoGIF}/>
       </Container>
     </>
   )

@@ -5,7 +5,7 @@ import Navbar from "../Navbar";
 function MainLayout(props) {
   return (
     <React.Fragment>
-        <Navbar active={1}/>
+        {/*<Navbar active={1}/>*/}
         {props.children}
         <Footer/>
     </React.Fragment>
