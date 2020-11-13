@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react"
 
 //import { Row, Col } from "reactstrap"
 import styled from "styled-components"
@@ -7,31 +7,29 @@ import mainGIF from "../../static/bandera.gif"
 
 const Container = styled.div`
   position: relative;
-  display:flex;
+  display: flex;
   width: 100%;
   height: 1200px;
   background: #ffffff;
   z-index: 0;
-  justify-content:center;
-
-  `
-
+  justify-content: center;
+`
 
 const Rectangle = styled.img`
-display:flex;
-position: relative;
-width: 600px;
-height: 857px;
-top: 50px;
-/* bg light */
-background: #f6f9fb;
+  display: flex;
+  position: relative;
+  width: 600px;
+  height: 857px;
+  top: 50px;
+  /* bg light */
+  background: #f6f9fb;
 
   border-radius: 32px;
   z-index: 0;
   @media (max-width: 700px) {
-    width:90%;
-    left: 5%;}
-
+    width: 90%;
+    left: 5%;
+  }
 `
 
 const Text = styled.h1`
@@ -51,16 +49,24 @@ const Text = styled.h1`
   }
 `
 
-
 const TextGreen = styled.strong`
   color: #0b9299;
 `
 
 export default function Header() {
+  const active = useRef()
+
+  const playCacerola = () => active.current.play()
+
+  console.log(active)
+
   return (
     <>
       <Container>
-        <Rectangle src={mainGIF}/>
+        <Rectangle onClick={playCacerola} src={mainGIF} />
+        <audio ref={active} autoPlay>
+          <source src="./cacerola.mp3" type="audio/mp3" />
+        </audio>
       </Container>
     </>
   )

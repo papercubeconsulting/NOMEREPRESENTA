@@ -9,10 +9,10 @@ import ReactAudioPlayer from 'react-audio-player';
 export default function Home() {
   return <MainLayout>
     <Header/>
-    <ReactAudioPlayer
+    {/* <ReactAudioPlayer
       src="./cacerola.mp3"
       autoPlay
       controls
-    />
+    /> */}
   </MainLayout>
 }
